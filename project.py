@@ -167,9 +167,26 @@ def main():
         "Machine_learning",
         "Data_science",
         "Computer_programming",
-        "Java_programming_language"
-    ]
-    
+        "Java_programming_language",
+        "Database_management_system",
+        "Cloud_computing",
+        "Cybersecurity",
+        "Web_development",
+        "Computer_networks",
+        "Software_engineering",
+        "Internet_of_things",
+        "Big_data",
+        "Computer_graphics",
+        "Operating_system",
+        "Mobile_computing",
+        "Computer_architecture",
+        "Information_security",
+        "Distributed_computing",
+        "Algorithm",
+        "Data_mining",
+        "Blockchain",
+        "Deep_learning"
+        ]
     for subject in subjects:
         print(f"Συλλογή Δεδομλενων για :{subject}")
         raw_data = crawler.get_wikipedia_content(subject)

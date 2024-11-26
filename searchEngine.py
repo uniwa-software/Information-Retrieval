@@ -34,7 +34,6 @@ class SearchEngine:
     
     def search(self, query: str) -> Dict[int, Dict[str, Any]]:
         tokens = self.preprocess_query(query)
-        print(f"Tokens για αναζήτηση: {tokens}")  # Για έλεγχο
     
         if not tokens:
             return {}
@@ -83,15 +82,7 @@ class SearchEngine:
             
         
     
-    def run(self):
-        print("\nΚαλώς ήρθατε στη μηχανή αναζήτησης!")
-        print("Πληκτρολογήστε ένα ερώτημα ή 'exit' για έξοδο.")
-        print("Παραδείγματα ερωτημάτων:")
-        print("- Απλή αναζήτηση: python")
-        print("- AND: python AND programming")
-        print("- OR: python OR java")
-        print("- NOT: python NOT javascript")
-        
+    def run(self):  
         while True:
             query = input("\nΕρώτημα: ").strip()
             if query.lower() == 'exit':
